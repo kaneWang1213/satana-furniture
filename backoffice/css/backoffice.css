@@ -1,0 +1,1458 @@
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../style/sass/_dateTime.sass */
+.datepicker {
+  display: inline-block;
+  font: 15px/1.5 "Helvetica Neue", mplus-2c, Helvetica, Arial, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  font-weight: 300;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  box-shadow: 0.5px 0.5px 0px #c8c8c8;
+  -webkit-box-shadow: 0.5px 0.5px 3px #eeeeee;
+  -moz-box-shadow: 0.5px 0.5px 3px #eeeeee;
+}
+/* line 13, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #eeeeee;
+  color: #3f3f3f;
+  text-align: center;
+  font-size: 9pt;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+/* line 27, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > a {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+  color: #3b7796;
+}
+/* line 33, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > a:hover {
+  color: #303030;
+  background-color: #c8c8c8;
+}
+/* line 36, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > a:active {
+  color: #ffffff;
+  background-color: #808080;
+}
+/* line 39, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > span {
+  margin-left: 20px;
+  margin-right: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+/* line 45, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > .icon-home {
+  position: absolute;
+  display: block;
+  float: left;
+  margin-top: 2px;
+  margin-left: 5px;
+  width: 11pt;
+  height: 11pt;
+  vertical-align: middle;
+}
+/* line 54, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > .icon-home > svg > g > path {
+  fill: #3b7796;
+}
+/* line 56, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_header > a:hover > svg > g > path {
+  fill: #303030;
+  /* Icon button hover color */
+}
+/* line 59, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container {
+  margin: -2px 0px -2px 0px;
+  background-color: #d2d2d2;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  box-shadow: 0.5px 0px 3px #c8c8c8;
+  -webkit-box-shadow: 0.5px 0px 3px #c8c8c8;
+  -moz-box-shadow: 0.5px 0px 3px #c8c8c8;
+}
+/* line 69, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 76, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar {
+  float: left;
+  width: auto;
+  margin-top: -0.5px;
+  margin-left: -1px;
+  margin-bottom: -2px;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+  border-top: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+}
+/* line 92, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > table {
+  padding: 10px;
+}
+/* line 95, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > th {
+  color: #646464;
+  width: 18px;
+  font-size: small;
+  font-weight: normal;
+  text-align: center;
+}
+/* line 101, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td {
+  padding: 3px 5px;
+  color: #000000;
+  font-size: small;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+}
+/* line 110, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.today {
+  border-bottom: #bfbfbf solid 2px;
+  margin-bottom: -2px;
+}
+/* line 113, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.wday_sat {
+  color: #0044aa;
+}
+/* line 115, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.wday_sun {
+  color: #e13b00;
+}
+/* line 117, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_another_month {
+  color: #cccccc;
+}
+/* line 119, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_in_past, .datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_in_unallowed, .datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.out_of_range {
+  cursor: default;
+  color: #cccccc;
+}
+/* line 122, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.active {
+  color: #ffffff;
+  background-color: #808080;
+}
+/* line 125, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.hover {
+  color: #000000;
+  background-color: #c8c8c8;
+}
+/* line 128, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist {
+  float: left;
+  width: 4.2em;
+  height: 118px;
+  margin-top: -0.5px;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+}
+/* line 145, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar {
+  overflow: hidden;
+  width: 6px;
+  background: #fafafa;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+}
+/* line 155, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar:horizontal {
+  height: 1px;
+}
+/* line 157, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-button {
+  display: none;
+}
+/* line 159, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-piece {
+  background: #eee;
+}
+/* line 161, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-piece:start {
+  background: #eee;
+}
+/* line 163, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+/* line 168, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-corner {
+  background: #333;
+}
+/* line 170, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 7px;
+  padding-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: small;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+}
+/* line 182, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.time_in_past, .datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.out_of_range {
+  cursor: default;
+  color: #cccccc;
+}
+/* line 185, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.active {
+  color: #ffffff;
+  background-color: #808080;
+}
+/* line 188, ../style/sass/_dateTime.sass */
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.hover {
+  color: #000000;
+  background-color: #c8c8c8;
+}
+
+/* line 11, ../style/sass/backoffice.sass */
+body {
+  font-family: "Microsoft Jhenghei";
+  background: #fff url(../img/paperPattern.jpg) repeat left top;
+}
+
+/* line 14, ../style/sass/backoffice.sass */
+.hide {
+  display: none;
+}
+
+/* line 17, ../style/sass/backoffice.sass */
+nav.navbar-default {
+  height: 50px;
+  margin: 0 auto;
+}
+
+/* line 21, ../style/sass/backoffice.sass */
+.navbar-collapse {
+  position: relative;
+}
+
+/* line 25, ../style/sass/backoffice.sass */
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
+/* line 29, ../style/sass/backoffice.sass */
+ul.navbar-nav {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 33, ../style/sass/backoffice.sass */
+.dropdown-menu {
+  padding: 0;
+}
+/* line 35, ../style/sass/backoffice.sass */
+.dropdown-menu > li > a {
+  padding: 10px 5px;
+}
+/* line 36, ../style/sass/backoffice.sass */
+.dropdown-menu > li > a:hover {
+  background-color: #047D65;
+  color: #fff;
+}
+
+/* line 41, ../style/sass/backoffice.sass */
+.navbar-header, .navbar-collapse {
+  width: 100%;
+}
+
+/* line 44, ../style/sass/backoffice.sass */
+.navbar-default {
+  height: 50px;
+  margin: 0 auto;
+}
+/* line 47, ../style/sass/backoffice.sass */
+.navbar-default .navbar-nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -1px);
+  white-space: nowrap;
+}
+/* line 54, ../style/sass/backoffice.sass */
+.navbar-default .navbar-nav > li > a {
+  white-space: nowrap;
+  color: #555;
+  cursor: pointer;
+  font-family: "Microsoft Jhenghei";
+  transition: ease 0.25s color, ease 0.25s background-color;
+}
+/* line 60, ../style/sass/backoffice.sass */
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #7C42FF;
+  color: #fff;
+  box-shadow: 0 -2px 1px 0 rgba(255, 255, 255, 0.4) inset;
+}
+/* line 64, ../style/sass/backoffice.sass */
+.navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li.active > a:hover {
+  background-image: none !important;
+  background-color: #3A1197;
+  color: #fff;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.4) inset;
+}
+
+/* line 69, ../style/sass/backoffice.sass */
+.navbar-right {
+  position: absolute;
+  right: 0;
+}
+
+/* line 74, ../style/sass/backoffice.sass */
+.mainContent {
+  min-height: calc(50vh);
+  padding-bottom: 15px;
+}
+
+/* line 78, ../style/sass/backoffice.sass */
+.navbar-fixed-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 83, ../style/sass/backoffice.sass */
+div.barcode {
+  margin: 0 auto;
+}
+
+/* line 87, ../style/sass/backoffice.sass */
+form.dbdata input[readonly], form.dbdata textarea[readonly] {
+  color: #fff;
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* mainBody */
+/* line 95, ../style/sass/backoffice.sass */
+body > div.container {
+  padding-top: 50px;
+}
+
+/*loginIn */
+/* line 100, ../style/sass/backoffice.sass */
+div.login {
+  width: 600px;
+  margin: 80px auto 0;
+  background: #fff url(../img/lineGround.png) repeat-x left top;
+  border-radius: 3px;
+  padding: 20px 10px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.57);
+}
+
+/* line 109, ../style/sass/backoffice.sass */
+.login label {
+  font-size: 16px;
+  margin: 15px 0 8px;
+  display: table;
+}
+/* line 114, ../style/sass/backoffice.sass */
+.login input[type=text], .login input[type=button], .login input[type=password] {
+  width: calc(100% - 30px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+/* line 119, ../style/sass/backoffice.sass */
+.login input[type=button] {
+  background-color: #3b4a50;
+  border-radius: 5px;
+  width: 40%;
+  margin: 30px auto 0;
+  display: table;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 128, ../style/sass/backoffice.sass */
+.login input[type=button]:hover {
+  background-color: #000;
+}
+/* line 130, ../style/sass/backoffice.sass */
+.login div.switchBtn {
+  width: 124px;
+  height: 52px;
+  background: transparent url(../img/switchBtn.png) no-repeat left top;
+  margin-top: 15px;
+  cursor: pointer;
+}
+/* line 136, ../style/sass/backoffice.sass */
+.login div.switchBtn.opt1 {
+  background-position: left -52px;
+}
+/* line 138, ../style/sass/backoffice.sass */
+.login div.typeDivid {
+  padding: 10px 0;
+}
+
+/* line 140, ../style/sass/backoffice.sass */
+.innerFrame {
+  position: relative;
+}
+/* line 142, ../style/sass/backoffice.sass */
+.innerFrame .selectList {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* line 147, ../style/sass/backoffice.sass */
+.backBtn {
+  background-color: #006699;
+  padding: 8px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+/* line 156, ../style/sass/backoffice.sass */
+.backBtn:hover {
+  background-color: #004364;
+}
+
+/*advMoudle */
+/* line 162, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="1"] tr.dataBase td:nth-child(1), .advMoudle table[moudleid="2"] tr.dataBase td:nth-child(1), .advMoudle table[moudleid="3"] tr.dataBase td:nth-child(1), .advMoudle table[moudleid="4"] tr.dataBase td:nth-child(1), .advMoudle table[moudleid="5"] tr.dataBase td:nth-child(1) {
+  text-indent: -200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 166, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="1"] tr.dataBase td:nth-child(1) {
+  background: transparent url(../img/td1_1.png) no-repeat center center;
+}
+/* line 168, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="2"] tr.dataBase td:nth-child(1) {
+  background: transparent url(../img/td2_1.png) no-repeat center center;
+}
+/* line 170, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="3"] tr.dataBase td:nth-child(1) {
+  background: transparent url(../img/td2_2.png) no-repeat center center;
+}
+/* line 172, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="4"] tr.dataBase td:nth-child(1) {
+  background: transparent url(../img/td2_3.png) no-repeat center center;
+}
+/* line 176, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="5"] tr.dataBase:nth-child(2) td:nth-child(1) {
+  background: transparent url(../img/td3_1.png) no-repeat center center;
+}
+/* line 178, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="5"] tr.dataBase:nth-child(3) td:nth-child(1) {
+  background: transparent url(../img/td3_2.png) no-repeat center center;
+}
+/* line 180, ../style/sass/backoffice.sass */
+.advMoudle table[moudleid="5"] tr.dataBase:nth-child(4) td:nth-child(1) {
+  background: transparent url(../img/td3_3.png) no-repeat center center;
+}
+
+/* line 184, ../style/sass/backoffice.sass */
+div.section .innerFrame {
+  margin: 15px 0;
+}
+/* line 186, ../style/sass/backoffice.sass */
+div.login .innerFrame {
+  margin-top: 0;
+}
+
+/* line 190, ../style/sass/backoffice.sass */
+div.section h2 {
+  font-size: 32px;
+  margin: 30px 0;
+  font-weight: bold;
+  background: transparent url(../img/subjLine.png) no-repeat left 5px;
+  padding: 0 0 0 10px;
+}
+
+/* line 197, ../style/sass/backoffice.sass */
+ul.tags {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+/* line 201, ../style/sass/backoffice.sass */
+ul.tags li {
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 204, ../style/sass/backoffice.sass */
+.tag {
+  width: 6%;
+  height: 50px;
+  background-color: #f6f6f6;
+  background-image: url(../img/tagNor.jpg);
+  background-repeat: repeat-x;
+  background-position: left top;
+  display: inline-table;
+  margin-left: -3px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 216, ../style/sass/backoffice.sass */
+.stdMoudle .tag {
+  width: 142px;
+}
+
+/* line 220, ../style/sass/backoffice.sass */
+.tag.plus {
+  max-width: 80px;
+}
+/* line 223, ../style/sass/backoffice.sass */
+.tag div.tagtxt {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+/* line 230, ../style/sass/backoffice.sass */
+.tag div.cross, .tag div.plus {
+  background: transparent url(../img/cross2.png) no-repeat center center;
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+/* line 238, ../style/sass/backoffice.sass */
+.tag div.cross:hover {
+  background: #ababab url(../img/cross.png) no-repeat center center;
+}
+/* line 240, ../style/sass/backoffice.sass */
+.tag div.plus {
+  background: transparent url(../img/plus2.png) no-repeat center center;
+}
+/* line 242, ../style/sass/backoffice.sass */
+.tag div.plus:hover {
+  background: #ababab url(../img/plus.png) no-repeat center center;
+}
+
+/* line 245, ../style/sass/backoffice.sass */
+ul.tags .tag.active {
+  background: #fff url(../img/tagAct.jpg) repeat-x left top;
+}
+
+/* line 249, ../style/sass/backoffice.sass */
+.tag:nth-child(1) {
+  margin-left: 0;
+}
+/* line 251, ../style/sass/backoffice.sass */
+.tag.active + .tag {
+  background-image: url(../img/actShadow.png), url(../img/tagNor.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-position: left top, left top;
+  display: inline-table;
+  margin-left: -3px;
+}
+
+/* line 258, ../style/sass/backoffice.sass */
+.bogard {
+  background-color: #fff;
+  min-height: 100px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  position: relative;
+}
+/* line 264, ../style/sass/backoffice.sass */
+.bogard div.ng-scope {
+  display: inline-block;
+  margin: 15px 0;
+}
+/* line 268, ../style/sass/backoffice.sass */
+.bogard font {
+  font-size: 15px;
+  padding: 15px 0;
+  line-height: 230%;
+}
+/* line 272, ../style/sass/backoffice.sass */
+.bogard div.btn {
+  background-color: #999;
+  margin: 1px;
+  border-radius: 0.25rem;
+}
+/* line 276, ../style/sass/backoffice.sass */
+.bogard div.cube {
+  width: 34px;
+  height: 34px;
+  float: left;
+  margin-right: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/* line 283, ../style/sass/backoffice.sass */
+.bogard div.edit {
+  background: #5754de url(../img/pen.png) no-repeat center center;
+}
+/* line 285, ../style/sass/backoffice.sass */
+.bogard div.remove {
+  background: #c90000 url(../img/del.png) no-repeat center center;
+}
+/* line 287, ../style/sass/backoffice.sass */
+.bogard div.confirm {
+  background: #7976ff url(../img/confirm.png) no-repeat center center;
+}
+/* line 290, ../style/sass/backoffice.sass */
+.bogard tr.insertdata .cancel, .bogard tr.insertdata .edit {
+  display: none;
+}
+/* line 294, ../style/sass/backoffice.sass */
+.bogard tr.insert td div.edit {
+  display: none;
+}
+/* line 297, ../style/sass/backoffice.sass */
+.bogard tr.dataBase .confirm {
+  display: none;
+}
+/* line 299, ../style/sass/backoffice.sass */
+.bogard tr.edit, .bogard tr.insert {
+  background-color: #eee;
+}
+/* line 301, ../style/sass/backoffice.sass */
+.bogard tr.edit input[type=text], .bogard tr.insert input[type=text] {
+  border: 1px dashed #999;
+}
+/* line 303, ../style/sass/backoffice.sass */
+.bogard tr.edit div.edit, .bogard tr.insert div.edit {
+  display: none;
+}
+/* line 305, ../style/sass/backoffice.sass */
+.bogard div.switch {
+  background: transparent url(../img/switch.png) no-repeat left top;
+  width: 70px;
+  height: 27px;
+  margin: 0 auto;
+}
+/* line 310, ../style/sass/backoffice.sass */
+.bogard div.switch.active {
+  background-position: left -27px;
+}
+/* line 312, ../style/sass/backoffice.sass */
+.bogard div.inserBtn {
+  min-width: 37px;
+  min-height: 37px;
+  background: #8480d7 url(../img/add.png) no-repeat 5px center;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 8px 0 35px;
+  line-height: 220%;
+  border-radius: 30px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: ease 0.2s background-color;
+}
+/* line 326, ../style/sass/backoffice.sass */
+.bogard div.inserBtn:hover {
+  background-color: #4c47ad;
+}
+/* line 328, ../style/sass/backoffice.sass */
+.bogard textarea {
+  width: 100%;
+}
+/* line 330, ../style/sass/backoffice.sass */
+.bogard h3 {
+  margin: 15px 0;
+  font-size: 24px;
+  padding: 3px 0;
+}
+/* line 336, ../style/sass/backoffice.sass */
+.bogard .bogardInner div h3 {
+  background-color: #518be8;
+  background-image: -moz-linear-gradient(#518be8, #68a0f9);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#518be8), to(#68a0f9));
+  background-image: -webkit-linear-gradient(#518be8, #68a0f9);
+  background-image: -o-linear-gradient(#518be8, #68a0f9);
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+/* line 341, ../style/sass/backoffice.sass */
+.bogard .bogardInner div h3 input[type='text'] {
+  width: calc(100% - 30px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  font-size: 15px;
+  color: #333;
+}
+/* line 347, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe {
+  padding-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  position: relative;
+  min-height: 156px;
+}
+/* line 353, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe div.cubes {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+/* line 357, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe div.cube {
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  float: right;
+  cursor: pointer;
+}
+/* line 363, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe input[type=text] {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  margin: 10px 0;
+}
+/* line 369, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe h3 {
+  margin: 0 -15px 0;
+}
+/* line 371, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe h3 input[type=text] {
+  color: #fff;
+  margin: 0;
+}
+/* line 375, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe.database div.cube.confirm, .bogard .bogardInner div.dataframe.database input[type=file] {
+  display: none;
+}
+/* line 378, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe.insert div.cube.edit, .bogard .bogardInner div.dataframe.update div.cube.edit {
+  display: none;
+}
+/* line 381, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe.insert input[type=text], .bogard .bogardInner div.dataframe.update input[type=text] {
+  background-color: #eee;
+  color: #333;
+}
+/* line 384, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe.insert h3, .bogard .bogardInner div.dataframe.update h3 {
+  text-align: left;
+  padding-left: 15px;
+}
+/* line 387, ../style/sass/backoffice.sass */
+.bogard .bogardInner div.dataframe.insert h3 input[type=text], .bogard .bogardInner div.dataframe.update h3 input[type=text] {
+  width: calc(100% - 60px);
+}
+/* line 391, ../style/sass/backoffice.sass */
+.bogard.menu .bondName span {
+  background-color: #888;
+  color: #fff;
+  font-size: 11px;
+  position: relative;
+  border-radius: 5px;
+  padding: 0px 2px;
+}
+/* line 398, ../style/sass/backoffice.sass */
+.bogard.menu .bondName span .cross {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  right: -5px;
+  top: -5px;
+  background: #000 url(../img/cross2.png) no-repeat center center/50%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* line 407, ../style/sass/backoffice.sass */
+.bogard table {
+  max-height: calc(100vh - 300px);
+  overflow: auto;
+  width: 100%;
+}
+/* line 411, ../style/sass/backoffice.sass */
+.bogard table th {
+  text-align: center;
+  border-top: 5px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+/* line 416, ../style/sass/backoffice.sass */
+.bogard table td {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  max-height: 300px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+}
+/* line 425, ../style/sass/backoffice.sass */
+.bogard table td div.org {
+  max-height: 150px;
+  overflow: hidden;
+}
+/* line 428, ../style/sass/backoffice.sass */
+.bogard table table td {
+  padding: 5px;
+  border: none;
+}
+/* line 431, ../style/sass/backoffice.sass */
+.bogard table td div.org {
+  display: none;
+}
+/* line 433, ../style/sass/backoffice.sass */
+.bogard table tr.dataBase td div.org {
+  display: block;
+  display: block;
+}
+/* line 437, ../style/sass/backoffice.sass */
+.bogard table.activityEdit tr.thColumn {
+  margin-top: 20px;
+}
+/* line 439, ../style/sass/backoffice.sass */
+.bogard table.activityEdit th {
+  background-color: #518be8;
+  background-image: -moz-linear-gradient(#518be8, #68a0f9);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#518be8), to(#68a0f9));
+  background-image: -webkit-linear-gradient(#518be8, #68a0f9);
+  background-image: -o-linear-gradient(#518be8, #68a0f9);
+  font-size: 24px;
+  color: #fff;
+}
+/* line 443, ../style/sass/backoffice.sass */
+.bogard table.activityEdit th:nth-child(2) {
+  border-left: 1px solid #fff;
+}
+/* line 445, ../style/sass/backoffice.sass */
+.bogard table.activityEdit td {
+  padding-bottom: 74px;
+  width: 50%;
+}
+/* line 448, ../style/sass/backoffice.sass */
+.bogard .freshBtn {
+  background: #e0ff9e url(../img/refresh.png) no-repeat center center;
+  display: none;
+}
+/* line 451, ../style/sass/backoffice.sass */
+.bogard .refreshBtn {
+  background: #e0ff9e url(../img/refresh.png) no-repeat center center;
+}
+/* line 453, ../style/sass/backoffice.sass */
+.bogard .couponBtn {
+  background: #b0b600 url(../img/coupon.png) no-repeat center center;
+  margin: 0 auto;
+  display: none;
+}
+/* line 457, ../style/sass/backoffice.sass */
+.bogard .imageBtn {
+  background: #82ab63 url(../img/image.png) no-repeat center center;
+  margin: 0 auto;
+  display: none;
+}
+/* line 461, ../style/sass/backoffice.sass */
+.bogard .detailBtn {
+  background: #82ab63 url(../img/detail.png) no-repeat center center;
+  margin: 0 auto;
+  display: none;
+}
+/* line 465, ../style/sass/backoffice.sass */
+.bogard .delPhoto {
+  background: #080808 url(../img/delPhoto.png) no-repeat center center;
+  border: none;
+  margin-top: 5px;
+}
+/* line 470, ../style/sass/backoffice.sass */
+.bogard .modify .deleteBtn {
+  display: none;
+}
+/* line 472, ../style/sass/backoffice.sass */
+.bogard .modify .freshBtn, .bogard .modify .imageBtn, .bogard .modify .detailBtn {
+  display: inline-table;
+}
+/* line 474, ../style/sass/backoffice.sass */
+.bogard input[type=text] {
+  background: #efefef;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%;
+}
+/* line 480, ../style/sass/backoffice.sass */
+.bogard input[type=text].half {
+  width: 45%;
+}
+/* line 482, ../style/sass/backoffice.sass */
+.bogard .deleteBtn, .bogard .removeBtn {
+  background: #ff1202 url(../img/cross.png) no-repeat center center;
+}
+/* line 484, ../style/sass/backoffice.sass */
+.bogard .updateBtn {
+  background: #02bc18 url(../img/update.png) no-repeat center center;
+}
+/* line 486, ../style/sass/backoffice.sass */
+.bogard .confirmBtn {
+  background-image: url(../img/confirmBtn.png);
+  background-color: #02bcff;
+  color: #fff;
+  display: table-cell;
+}
+/* line 491, ../style/sass/backoffice.sass */
+.bogard .confirmBtn:hover {
+  background-color: #005a7a;
+}
+/* line 493, ../style/sass/backoffice.sass */
+.bogard .btnForm {
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  padding: 5px 20px 5px 45px;
+  font-size: 21px;
+  transition: ease 0.25s background-color;
+}
+/* line 499, ../style/sass/backoffice.sass */
+.bogard .preview {
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: 2px dashed #ddd;
+  background: transparent no-repeat center center/contain;
+}
+/* line 505, ../style/sass/backoffice.sass */
+.bogard .preview.loading {
+  display: table;
+  background: transparent url(../img/clock.gif) no-repeat center center;
+}
+/* line 508, ../style/sass/backoffice.sass */
+.bogard .preview::after {
+  background: url("../img/removeImg.png") no-repeat center center/50%;
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  opacity: 0;
+  transition: ease 0.25s opacity;
+}
+/* line 517, ../style/sass/backoffice.sass */
+.bogard .preview:hover::after {
+  opacity: 1;
+}
+/* line 520, ../style/sass/backoffice.sass */
+.bogard .loaded .preview {
+  display: block;
+  margin-top: 5px;
+}
+/* line 523, ../style/sass/backoffice.sass */
+.bogard .loaded input[type='file'] {
+  display: none;
+}
+/* line 525, ../style/sass/backoffice.sass */
+.bogard .titleinput {
+  border-top: 5px solid #8480d7;
+  padding: 10px 0;
+  clear: left;
+}
+/* line 529, ../style/sass/backoffice.sass */
+.bogard .titleinput h3, .bogard .titleinput input {
+  float: left;
+  margin: 0px;
+}
+/* line 532, ../style/sass/backoffice.sass */
+.bogard .titleinput input {
+  margin-left: 30px;
+  width: 25%;
+}
+/* line 535, ../style/sass/backoffice.sass */
+.bogard .confirmFrame {
+  margin: 15px 0;
+}
+/* line 537, ../style/sass/backoffice.sass */
+.bogard .frame {
+  padding: 3px 0;
+}
+
+/* line 540, ../style/sass/backoffice.sass */
+form.dbdata table {
+  margin-bottom: 50px;
+}
+
+/* line 543, ../style/sass/backoffice.sass */
+.insertdata div.switch {
+  cursor: pointer;
+}
+
+/* line 549, ../style/sass/backoffice.sass */
+.deleteBtn, .editBtn, .editBtn2, .editBtn3, .editBtn4, .updateBtn, .freshBtn, div.couponBtn, .imageBtn, .detailBtn, .bogard .delPhoto, .modifyBtn, .removeBtn, .refreshBtn {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  display: inline-table;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+/* line 558, ../style/sass/backoffice.sass */
+.confirmBtn2, .confirmBtn3 {
+  background: #02bcff url(../img/confirm.png) no-repeat center center;
+}
+
+/* line 561, ../style/sass/backoffice.sass */
+div.insertItem, .storesBack {
+  width: 100%;
+  height: 100%;
+  background-color: #8480d7;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* line 572, ../style/sass/backoffice.sass */
+a div.insertItem, a div.storesBack {
+  text-decoration: none;
+  margin: 15px auto 0;
+}
+/* line 576, ../style/sass/backoffice.sass */
+a:hover div.insertItem, a:hover div.storesBack {
+  text-decoration: none;
+}
+
+/* line 580, ../style/sass/backoffice.sass */
+div.swt {
+  width: 34px;
+  height: 18px;
+  margin: 0 auto;
+  background: transparent url(../img/switchBt.png) no-repeat left top;
+  cursor: pointer;
+}
+/* line 586, ../style/sass/backoffice.sass */
+div.s0 {
+  background-position: left -18px;
+}
+
+/* connect moudle */
+/* line 592, ../style/sass/backoffice.sass */
+table.connect tr td:nth-child(1) {
+  background: transparent none no-repeat center center;
+}
+/* line 595, ../style/sass/backoffice.sass */
+table.split tr td:nth-child(1) {
+  background: transparent none no-repeat center center;
+}
+/* line 597, ../style/sass/backoffice.sass */
+table.connect tr.dataBase:nth-child(2) td:nth-child(1) {
+  background-image: url(../img/td3_1.png);
+}
+
+/* line 601, ../style/sass/backoffice.sass */
+div#summernote {
+  white-space: normal;
+}
+/* line 603, ../style/sass/backoffice.sass */
+div#summernote .col-md-6 img {
+  max-width: 100% !important;
+}
+
+/* line 606, ../style/sass/backoffice.sass */
+.col-md-6 div#summernote img {
+  max-width: 100% !important;
+}
+
+/* blackFrame */
+/* line 612, ../style/sass/backoffice.sass */
+div.blackFrame {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1100;
+}
+/* line 621, ../style/sass/backoffice.sass */
+div.blackFrame div.innerFrame {
+  width: 450px;
+  background-color: #fff;
+  position: relative;
+  margin: 180px auto 0;
+  display: table;
+  box-shadow: 0 0 5px #000;
+}
+/* line 628, ../style/sass/backoffice.sass */
+div.blackFrame div.popupFrame {
+  width: 450px;
+  min-height: 200px;
+  box-shadow: 0 0 10px #000;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: initial;
+  transform: translate(-50%, -50%);
+}
+/* line 638, ../style/sass/backoffice.sass */
+div.blackFrame div.sltInnerFrame {
+  width: 800px;
+  background-color: #fff;
+  position: relative;
+  margin: 80px auto 0;
+  box-shadow: 0 0 5px #000;
+  padding: 15px;
+  min-height: 350px;
+}
+/* line 646, ../style/sass/backoffice.sass */
+div.blackFrame div.innerFrame div.cross, div.blackFrame div.sltInnerFrame div.cross {
+  border: 2px solid #fff;
+  box-shadow: 0 3px 7px #000;
+  background: #000 url(../img/cross.png) no-repeat center center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: -15px -15px 0 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* line 658, ../style/sass/backoffice.sass */
+div.classifySelect table td {
+  padding: 10px;
+}
+/* line 660, ../style/sass/backoffice.sass */
+div.imgFrame {
+  width: 25%;
+  padding: 10px;
+  position: relative;
+  float: left;
+}
+/* line 665, ../style/sass/backoffice.sass */
+div.preImg div.imgFrame {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: table;
+  margin: 60px auto 0;
+  float: none;
+  position: relative;
+  padding: 0;
+}
+/* line 674, ../style/sass/backoffice.sass */
+div.preImg div.imgFrame .hint {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+/* line 681, ../style/sass/backoffice.sass */
+div.sug {
+  clear: left;
+}
+/* line 683, ../style/sass/backoffice.sass */
+div.smallImg div {
+  margin: 10px 0;
+}
+/* line 685, ../style/sass/backoffice.sass */
+div.titleDiv {
+  width: 50%;
+  float: left;
+}
+
+/* line 689, ../style/sass/backoffice.sass */
+img.width2Side {
+  width: 100%;
+}
+
+/* line 692, ../style/sass/backoffice.sass */
+.clear {
+  clear: both;
+}
+
+/* line 695, ../style/sass/backoffice.sass */
+.btn.wideBtn {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* line 699, ../style/sass/backoffice.sass */
+.bogard div.imgFrame input[type="text"] {
+  width: 60%;
+}
+
+/* product Icon */
+/* line 705, ../style/sass/backoffice.sass */
+input.selectImg {
+  padding: 10px 15px;
+  border: none;
+  background-color: #8aa6f9;
+  color: #fff;
+  border-radius: 5px;
+  float: left;
+}
+
+/* line 714, ../style/sass/backoffice.sass */
+div.item, div.selectedImg {
+  width: 23%;
+  margin: 1%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.35s background-color;
+}
+/* line 724, ../style/sass/backoffice.sass */
+div.item:hover, div.item.selected {
+  background-color: #8aa6f9;
+  color: #fff;
+  border: none;
+}
+/* line 728, ../style/sass/backoffice.sass */
+div.selectedImg {
+  background-color: #8aa6f9;
+  color: #fff;
+  border: none;
+  padding: 2px 2px 3px;
+  vertical-align: top;
+  margin: 0 0 0 5px;
+}
+/* line 736, ../style/sass/backoffice.sass */
+div.item:hover img, div.item.selected img {
+  border: 1px solid #fff;
+}
+/* line 738, ../style/sass/backoffice.sass */
+div.item img {
+  border-radius: 5px;
+  margin-right: 10px;
+  pointer-events: none;
+}
+/* line 742, ../style/sass/backoffice.sass */
+div.selectedImg img {
+  border-radius: 5px;
+  margin-right: 10px;
+  pointer-events: none;
+}
+/* line 746, ../style/sass/backoffice.sass */
+div.item label {
+  pointer-events: none;
+}
+
+/* line 749, ../style/sass/backoffice.sass */
+input.confirmData {
+  background-color: #b7b933;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 756, ../style/sass/backoffice.sass */
+div.btnsFrame {
+  display: table;
+}
+
+/* line 760, ../style/sass/backoffice.sass */
+.pageview td {
+  text-align: center;
+}
+/* line 762, ../style/sass/backoffice.sass */
+.pageview td .page {
+  display: inline;
+  background-color: #eee;
+  vertical-align: middle;
+  padding: 3px 12px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+/* line 769, ../style/sass/backoffice.sass */
+.pageview td .page:hover {
+  background-color: #8aa6f9;
+}
+/* line 771, ../style/sass/backoffice.sass */
+.pageview td .page.active {
+  cursor: default;
+  background-color: #aaa;
+}
+
+/* line 776, ../style/sass/backoffice.sass */
+.bogard div.sltClass {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+}
+/* line 780, ../style/sass/backoffice.sass */
+.bogard div.sltClass select, .bogard div.sltClass .btnForm {
+  float: left;
+}
+/* line 782, ../style/sass/backoffice.sass */
+.bogard div.sltClass .btnForm {
+  background-image: none;
+  margin-left: 3px;
+  padding: 3px 10px 3px !important;
+}
+/* line 786, ../style/sass/backoffice.sass */
+.bogard div.ng-scope.pageMap {
+  text-align: center;
+  display: table;
+  margin: 15px auto 0;
+}
+/* line 790, ../style/sass/backoffice.sass */
+.bogard div.ng-scope.pageMap .page {
+  display: inline-table;
+  vertical-align: middle;
+  font-size: 12px;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 7px 10px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+/* line 799, ../style/sass/backoffice.sass */
+.bogard div.ng-scope.pageMap .page:hover, .bogard div.ng-scope.pageMap .page.active {
+  background-color: #aaa;
+  color: #fff;
+}
+/* line 802, ../style/sass/backoffice.sass */
+.bogard div.ng-scope.pageMap .page.active {
+  cursor: unset;
+}
+
+/* line 804, ../style/sass/backoffice.sass */
+.btnForm {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #999;
+  color: #fff;
+}
+
+/* line 811, ../style/sass/backoffice.sass */
+td#chosen span {
+  background-color: #eee;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+/* footer */
+/* line 821, ../style/sass/backoffice.sass */
+footer {
+  padding: 0;
+}
+/* line 823, ../style/sass/backoffice.sass */
+footer div.container {
+  text-align: center;
+}

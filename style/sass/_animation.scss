@@ -1,0 +1,83 @@
+@mixin animation ($delay, $duration, $animation, $direction: forward, $fillmode: fowards, $iteration: 3, $timing: linear) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: $fillmode;
+    -webkit-animation-direction: $direction;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-animation-timing-function: $timing;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: $fillmode;
+    -moz-animation-direction: $direction;
+    -moz-animation-iteration-count: $iteration;
+    -moz-animation-timing-function: $timing;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: $fillmode;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+}
+
+@mixin keyframe ( $ani_name) {
+    @-webkit-keyframes waveAnimation {
+        @content;
+    }
+
+    @-moz-keyframes waveAnimation {
+        @content;
+    }
+
+    @-o-keyframes waveAnimation {
+        @content;
+    }
+
+    @keyframes waveAnimation {
+        @content;
+    }
+}
+
+@mixin keyframes ($Aname:goingDown) {
+    @-webkit-keyframes goingDown {
+        @content;
+    }
+
+    @-moz-keyframes goingDown {
+        @content;
+    }
+
+    @-o-keyframes goingDown {
+        @content;
+    }
+
+    @keyframes goingDown {
+        @content;
+    }
+}
+
+@include keyframe(waveAnimation) {
+    0% {
+        background-position: 0 100%, 0 0;
+    }
+
+    100% {
+        background-position: 1899px 100%, 1899px 0;
+    }
+}
+
+@include keyframes (goingDown) {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -70%) scale(.2, .2);
+    }
+
+    100% {
+        opacity: 1;
+        transform:  translate(-50%, -50%) scale(1, 1);
+    }
+}

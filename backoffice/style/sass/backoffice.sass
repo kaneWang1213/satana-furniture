@@ -1,0 +1,830 @@
+@import "compass/reset"
+@import "dateTime"
+
+@mixin gradient($from, $to)
+    background-color: $from
+    background-image: -moz-linear-gradient($from, $to)
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to))
+    background-image: -webkit-linear-gradient($from, $to)
+    background-image: -o-linear-gradient($from, $to)
+
+body
+    font-family: "Microsoft Jhenghei"
+    background: #fff url(../img/paperPattern.jpg) repeat left top
+.hide
+    display: none
+
+nav.navbar-default
+    height: 50px
+    margin: 0 auto
+
+.navbar-collapse
+    position: relative
+
+.navbar-brand
+    img
+        height: 100%
+        width: auto
+
+ul.navbar-nav
+    float: none
+    margin: 0 auto
+
+.dropdown-menu
+    padding: 0
+    > li > a
+        &:hover
+            background-color: #047D65
+            color: #fff
+        padding: 10px 5px
+
+.navbar-header, .navbar-collapse
+    width: 100%
+
+.navbar-default
+    height: 50px
+    margin: 0 auto
+    .navbar-nav
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate( -50%, -1px)
+        white-space: nowrap
+        > li
+            > a
+                white-space: nowrap
+                color: #555
+                cursor: pointer
+                font-family: "Microsoft Jhenghei"
+                transition: ease .25s color, ease .25s background-color
+                &:hover
+                    background-color: #7C42FF
+                    color: #fff
+                    box-shadow: 0 -2px 1px 0 rgba(255, 255, 255, .4) inset
+            &.active > a, &.active > a:hover
+                background-image: none !important
+                background-color: #3A1197
+                color: #fff
+                box-shadow: 0 4px 9px rgba(0, 0, 0, .4) inset
+.navbar-right
+    position: absolute
+    right: 0
+            
+
+.mainContent
+    min-height: calc(50vh)
+    padding-bottom: 15px
+
+.navbar-fixed-right
+    position: absolute
+    right: 0
+    top: 0
+
+div.barcode
+    margin: 0 auto
+
+form.dbdata
+    input[readonly], textarea[readonly]
+        color: #fff
+        background-color: #aaa
+        cursor: not-allowed
+
+
+/* mainBody */
+
+body > div.container
+    padding-top: 50px
+
+/*loginIn */
+
+div.login
+    width: 600px
+    margin: 80px auto 0
+    background: #fff url(../img/lineGround.png) repeat-x left top
+    border-radius: 3px
+    padding: 20px 10px 20px
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.57)
+
+.login
+    label
+        font-size: 16px
+        margin: 15px 0 8px
+        display: table
+    input
+        &[type=text], &[type=button], &[type=password]
+            width: calc(100% - 30px)
+            border: 1px solid rgba(0, 0, 0, 0.2)
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4)
+            padding: 10px
+        &[type=button]
+            background-color: #3b4a50
+            border-radius: 5px
+            width: 40%
+            margin: 30px auto 0
+            display: table
+            font-size: 15px
+            color: #fff
+            cursor: pointer
+            &:hover
+                background-color: #000
+    div.switchBtn
+        width: 124px
+        height: 52px
+        background: transparent url(../img/switchBtn.png) no-repeat left top
+        margin-top: 15px
+        cursor: pointer
+        &.opt1
+            background-position: left -52px
+    div.typeDivid
+        padding: 10px 0
+.innerFrame
+    position: relative
+    .selectList
+        position: absolute
+        right: 10px
+        top: 10px
+
+.backBtn
+    background-color: #006699
+    padding: 8px 20px
+    position: absolute
+    right: 0
+    top: 0
+    color: #fff
+    cursor: pointer
+    font-size: 15px
+    &:hover
+        background-color: #004364
+
+/*advMoudle
+
+.advMoudle table
+    &[moudleid="1"] tr.dataBase td:nth-child(1), &[moudleid="2"] tr.dataBase td:nth-child(1), &[moudleid="3"] tr.dataBase td:nth-child(1), &[moudleid="4"] tr.dataBase td:nth-child(1), &[moudleid="5"] tr.dataBase td:nth-child(1)
+        text-indent: -200%
+        white-space: nowrap
+        overflow: hidden
+    &[moudleid="1"] tr.dataBase td:nth-child(1)
+        background: transparent url(../img/td1_1.png) no-repeat center center
+    &[moudleid="2"] tr.dataBase td:nth-child(1)
+        background: transparent url(../img/td2_1.png) no-repeat center center
+    &[moudleid="3"] tr.dataBase td:nth-child(1)
+        background: transparent url(../img/td2_2.png) no-repeat center center
+    &[moudleid="4"] tr.dataBase td:nth-child(1)
+        background: transparent url(../img/td2_3.png) no-repeat center center
+    &[moudleid="5"]
+        tr.dataBase
+            &:nth-child(2) td:nth-child(1)
+                background: transparent url(../img/td3_1.png) no-repeat center center
+            &:nth-child(3) td:nth-child(1)
+                background: transparent url(../img/td3_2.png) no-repeat center center
+            &:nth-child(4) td:nth-child(1)
+                background: transparent url(../img/td3_3.png) no-repeat center center
+
+div
+    &.section .innerFrame
+        margin: 15px 0
+    &.login .innerFrame
+        margin-top: 0
+
+div.section
+    h2
+        font-size: 32px
+        margin: 30px 0
+        font-weight: bold
+        background: transparent url(../img/subjLine.png) no-repeat left 5px
+        padding: 0 0 0 10px
+
+ul.tags
+    padding: 0
+    margin: 0
+    white-space: nowrap
+    li
+        box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2)
+
+.tag
+    width: 6%
+    height: 50px
+    background-color: #f6f6f6
+    background-image: url(../img/tagNor.jpg)
+    background-repeat: repeat-x
+    background-position: left top
+    display: inline-table
+    margin-left: -3px
+    cursor: pointer
+    position: relative
+
+.stdMoudle .tag
+    width: 142px
+
+.tag
+    &.plus
+        max-width: 80px
+    div
+        &.tagtxt
+            display: table-cell
+            width: 100%
+            height: 100%
+            text-align: center
+            vertical-align: middle
+            padding: 0 10px
+        &.cross, &.plus
+            background: transparent url(../img/cross2.png) no-repeat center center
+            position: absolute
+            right: 2px
+            top: 7px
+            width: 15px
+            height: 15px
+            border-radius: 10px
+        &.cross:hover
+            background: #ababab url(../img/cross.png) no-repeat center center
+        &.plus
+            background: transparent url(../img/plus2.png) no-repeat center center
+            &:hover
+                background: #ababab url(../img/plus.png) no-repeat center center
+
+ul.tags .tag.active
+    background: #fff url(../img/tagAct.jpg) repeat-x left top
+
+.tag
+    &:nth-child(1)
+        margin-left: 0
+    &.active + .tag
+        background-image: url(../img/actShadow.png), url(../img/tagNor.jpg)
+        background-repeat: no-repeat, repeat-x
+        background-position: left top, left top
+        display: inline-table
+        margin-left: -3px
+        
+.bogard
+    background-color: #fff
+    min-height: 100px
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+    padding: 15px
+    position: relative
+    div.ng-scope
+        display: inline-block
+        margin: 15px 0
+    div.bogardFrame
+    font
+        font-size: 15px
+        padding: 15px 0
+        line-height: 230%
+    div.btn
+        background-color: #999
+        margin: 1px
+        border-radius: .25rem
+    div.cube
+        width: 34px
+        height: 34px
+        float: left
+        margin-right: 1px
+        border-radius: 2px
+        cursor: pointer
+    div.edit
+        background: #5754de url(../img/pen.png) no-repeat center center
+    div.remove
+        background: #c90000 url(../img/del.png) no-repeat center center
+    div.confirm
+        background: #7976ff url(../img/confirm.png) no-repeat center center
+    tr.insertdata
+        .cancel, .edit
+            display: none
+    tr.insert
+        td
+            div.edit
+                display: none
+    tr.dataBase
+        .confirm
+            display: none
+    tr.edit, tr.insert
+        background-color: #eee
+        input[type=text]
+            border: 1px dashed #999
+        div.edit
+            display: none
+    div.switch
+        background: transparent url(../img/switch.png) no-repeat left top
+        width: 70px
+        height: 27px
+        margin: 0 auto
+        &.active
+            background-position: left -27px
+    div.inserBtn
+        min-width: 37px
+        min-height: 37px
+        background: #8480d7 url(../img/add.png) no-repeat 5px center
+        color: #fff
+        text-align: center
+        cursor: pointer
+        padding: 0 8px 0 35px
+        line-height: 220%
+        border-radius: 30px
+        position: absolute
+        right: 15px
+        top: 15px
+        transition: ease .2s background-color
+        &:hover
+            background-color: #4c47ad
+    textarea
+        width: 100%
+    h3
+        margin: 15px 0
+        font-size: 24px
+        padding: 3px 0
+    .bogardInner
+        div    
+            h3
+                +gradient(#518be8, #68a0f9)    
+                padding: 10px 0
+                text-align: center
+                color: #fff
+                input[type='text']
+                    width: calc(100% - 30px)
+                    background-color: rgba(255, 255, 255, .8)
+                    border: 1px solid #fff
+                    font-size: 15px
+                    color: #333
+        div.dataframe
+            padding-bottom: 15px
+            background-color: #fff
+            border: 1px solid #eee
+            position: relative
+            min-height: 156px
+            div.cubes
+                position: absolute
+                right: 5px
+                top: 5px
+            div.cube
+                width: 25px
+                height: 25px
+                background-size: contain
+                float: right
+                cursor: pointer
+            input[type=text]
+                background-color: transparent
+                border: none
+                padding: 5px
+                font-size: 12px
+                margin: 10px 0
+            h3
+                margin: 0 -15px 0
+                input[type=text]
+                    color: #fff
+                    margin: 0
+        div.dataframe.database
+            div.cube.confirm, input[type=file]
+                display: none
+        div.dataframe.insert, div.dataframe.update
+            div.cube.edit
+                display: none
+        div.dataframe.insert, div.dataframe.update
+            input[type=text]
+                background-color: #eee
+                color: #333
+            h3
+                text-align: left
+                padding-left: 15px
+                input[type=text]
+                    width: calc(100% - 60px)
+    &.menu
+        .bondName
+            span
+                background-color: #888
+                color: #fff
+                font-size: 11px
+                position: relative
+                border-radius: 5px
+                padding: 0px 2px
+                .cross
+                    position: absolute
+                    width: 11px
+                    height: 11px
+                    right: -5px
+                    top: -5px
+                    background: #000 url(../img/cross2.png) no-repeat center center / 50%
+                    border-radius: 20px
+                    cursor: pointer
+    table
+        max-height: calc(100vh - 300px)
+        overflow: auto
+        width: 100%
+        th
+            text-align: center
+            border-top: 5px solid #eee
+            border-bottom: 1px solid #eee
+            padding: 10px 0
+        td
+            text-align: center
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            max-width: 150px
+            max-height: 300px
+            padding: 15px 10px
+            border-bottom: 1px solid #eee
+            div.org
+                max-height: 150px
+                overflow: hidden
+        table td
+            padding: 5px
+            border: none
+        td div.org
+            display: none
+        tr.dataBase td div.org
+            display: block
+            display: block
+    table.activityEdit
+        tr.thColumn
+            margin-top: 20px
+        th
+            +gradient(#518be8, #68a0f9)
+            font-size: 24px
+            color: #fff
+        th:nth-child(2)
+            border-left: 1px solid #fff
+        td
+            padding-bottom: 74px
+            width: 50%
+    .freshBtn
+        background: #e0ff9e url(../img/refresh.png) no-repeat center center
+        display: none
+    .refreshBtn
+        background: #e0ff9e url(../img/refresh.png) no-repeat center center
+    .couponBtn
+        background: #b0b600 url(../img/coupon.png) no-repeat center center
+        margin: 0 auto
+        display: none
+    .imageBtn
+        background: #82ab63 url(../img/image.png) no-repeat center center
+        margin: 0 auto
+        display: none
+    .detailBtn
+        background: #82ab63 url(../img/detail.png) no-repeat center center
+        margin: 0 auto
+        display: none
+    .delPhoto
+        background: #080808 url(../img/delPhoto.png) no-repeat center center
+        border: none
+        margin-top: 5px
+    .modify
+        .deleteBtn
+            display: none
+        .freshBtn, .imageBtn, .detailBtn
+            display: inline-table
+    input[type=text]
+        background: #efefef
+        border: none
+        padding: 10px
+        border-radius: 3px
+        width: 100%
+        &.half
+            width: 45%
+    .deleteBtn, .removeBtn
+        background: #ff1202 url(../img/cross.png) no-repeat center center
+    .updateBtn
+        background: #02bc18 url(../img/update.png) no-repeat center center
+    .confirmBtn
+        background-image: url(../img/confirmBtn.png)
+        background-color: #02bcff
+        color: #fff
+        display: table-cell
+        &:hover
+            background-color: #005a7a
+    .btnForm
+        background-repeat: no-repeat
+        background-position: 7px center
+        padding: 5px 20px 5px 45px
+        font-size: 21px
+        transition: ease .25s background-color
+    .preview
+        width: 50px
+        height: 50px
+        display: none
+        border: 2px dashed #ddd
+        background: transparent no-repeat center center / contain
+    .preview.loading
+        display: table
+        background: transparent url(../img/clock.gif) no-repeat center center
+    .preview::after
+        background: url('../img/removeImg.png') no-repeat center center / 50%
+        content: ''
+        width: 50px
+        height: 50px
+        display: block
+        cursor: pointer
+        opacity: 0
+        transition: ease .25s opacity
+    .preview:hover::after
+        opacity: 1
+    .loaded
+        .preview
+            display: block
+            margin-top: 5px
+        input[type='file']
+            display: none        
+    .titleinput
+        border-top: 5px solid #8480d7
+        padding: 10px 0
+        clear: left
+        h3, input
+            float: left
+            margin: 0px
+        input
+            margin-left: 30px
+            width: 25%
+    .confirmFrame
+        margin: 15px 0
+    .frame
+        padding: 3px 0
+form.dbdata 
+    table
+        margin-bottom: 50px
+.insertdata
+    div.switch
+        cursor: pointer
+
+.deleteBtn, .editBtn, .editBtn2, .editBtn3, .editBtn4, .updateBtn, .freshBtn, div.couponBtn, .imageBtn, .detailBtn, .bogard .delPhoto, .modifyBtn, .removeBtn, .refreshBtn
+    @extend %all-btn
+
+%all-btn
+    width: 25px
+    height: 25px
+    border-radius: 5px
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5)
+    display: inline-table
+    margin: 0 3px
+    cursor: pointer
+
+.confirmBtn2, .confirmBtn3
+    background: #02bcff url(../img/confirm.png) no-repeat center center
+
+div.insertItem, .storesBack
+    width: 100%
+    height: 100%
+    background-color: #8480d7
+    color: #fff
+    text-align: center
+    cursor: pointer
+    padding: 15px
+
+a
+    div
+        &.insertItem, &.storesBack
+            text-decoration: none
+            margin: 15px auto 0
+    &:hover div
+        &.insertItem, &.storesBack
+            text-decoration: none
+
+div
+    &.swt
+        width: 34px
+        height: 18px
+        margin: 0 auto
+        background: transparent url(../img/switchBt.png) no-repeat left top
+        cursor: pointer
+    &.s0
+        background-position: left -18px
+
+/* connect moudle
+
+table
+    &.connect tr td:nth-child(1)
+        background: transparent none no-repeat center center
+    &.split tr
+        td:nth-child(1)
+            background: transparent none no-repeat center center
+    &.connect tr.dataBase:nth-child(2) td:nth-child(1)
+        background-image: url(../img/td3_1.png)
+
+
+div#summernote
+    white-space: normal
+    .col-md-6 img
+        max-width: 100% !important
+
+.col-md-6 div#summernote img
+    max-width: 100% !important
+
+/* blackFrame
+
+div
+    &.blackFrame
+        width: 100%
+        height: 100%
+        position: fixed
+        left: 0
+        top: 0
+        background-color: rgba(0, 0, 0, 0.9)
+        z-index: 1100
+        div
+            &.innerFrame
+                width: 450px
+                background-color: #fff
+                position: relative
+                margin: 180px auto 0
+                display: table
+                box-shadow: 0 0 5px #000
+            &.popupFrame
+                width: 450px
+                min-height: 200px
+                box-shadow: 0 0 10px #000
+                margin: 0
+                position: absolute
+                left: 50%
+                top: 50%
+                display: initial
+                transform: translate(-50%, -50%)
+            &.sltInnerFrame
+                width: 800px
+                background-color: #fff
+                position: relative
+                margin: 80px auto 0
+                box-shadow: 0 0 5px #000
+                padding: 15px
+                min-height: 350px
+            &.innerFrame div.cross, &.sltInnerFrame div.cross
+                border: 2px solid #fff
+                box-shadow: 0 3px 7px #000
+                background: #000 url(../img/cross.png) no-repeat center center
+                position: absolute
+                right: 0
+                top: 0
+                width: 30px
+                height: 30px
+                margin: -15px -15px 0 0
+                border-radius: 20px
+                cursor: pointer
+    &.classifySelect table td
+        padding: 10px
+    &.imgFrame
+        width: 25%
+        padding: 10px
+        position: relative
+        float: left
+    &.preImg div.imgFrame
+        width: 80%
+        max-width: 500px
+        margin: 0 auto
+        display: table
+        margin: 60px auto 0
+        float: none
+        position: relative
+        padding: 0
+        .hint
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            background-color: rgba(0, 0, 0, 0.6)
+            color: #fff
+    &.sug
+        clear: left
+    &.smallImg div
+        margin: 10px 0
+    &.titleDiv
+        width: 50%
+        float: left
+
+img.width2Side
+    width: 100%
+
+.clear
+    clear: both
+
+.btn.wideBtn
+    width: 100%
+    border-radius: 0
+
+.bogard div.imgFrame input[type="text"]
+    width: 60%
+
+
+/* product Icon
+
+input.selectImg
+    padding: 10px 15px
+    border: none
+    background-color: #8aa6f9
+    color: #fff
+    border-radius: 5px
+    float: left
+
+div
+    &.item, &.selectedImg
+        width: 23%
+        margin: 1%
+        float: left
+        padding: 10px
+        border: 1px solid #eee
+        border-radius: 5px
+        cursor: pointer
+        transition: ease .35s background-color
+    &.item
+        &:hover, &.selected
+            background-color: #8aa6f9
+            color: #fff
+            border: none
+    &.selectedImg
+        background-color: #8aa6f9
+        color: #fff
+        border: none
+        padding: 2px 2px 3px
+        vertical-align: top
+        margin: 0 0 0 5px
+    &.item
+        &:hover img, &.selected img
+            border: 1px solid #fff
+        img
+            border-radius: 5px
+            margin-right: 10px
+            pointer-events: none
+    &.selectedImg img
+        border-radius: 5px
+        margin-right: 10px
+        pointer-events: none
+    &.item label
+        pointer-events: none
+
+input.confirmData
+    background-color: #b7b933
+    padding: 15px
+    border: none
+    color: #fff
+    font-size: 18px
+
+div.btnsFrame
+    display: table
+
+.pageview
+    td
+        text-align: center
+        .page
+            display: inline
+            background-color: #eee
+            vertical-align: middle
+            padding: 3px 12px
+            margin-left: 1px
+            cursor: pointer
+            &:hover
+                background-color: #8aa6f9
+        .page.active
+            cursor: default
+            background-color: #aaa
+            
+.bogard
+    div.sltClass
+        position: absolute
+        right: 15px
+        top: 0px
+        select, .btnForm
+            float: left
+        .btnForm
+            background-image: none
+            margin-left: 3px
+            padding: 3px 10px 3px !important
+    div.ng-scope.pageMap
+        text-align: center
+        display: table
+        margin: 15px auto 0
+        .page
+            display: inline-table
+            vertical-align: middle
+            font-size: 12px
+            border: 1px solid #eee
+            text-align: center
+            padding: 7px 10px
+            margin: 0 2px
+            cursor: pointer
+            &:hover, &.active
+                background-color: #aaa
+                color: #fff
+            &.active
+                cursor: unset
+.btnForm
+    cursor: pointer
+    padding: 5px 10px
+    background-color: #999
+    color: #fff
+
+td#chosen
+    span
+        background-color: #eee
+        border-radius: 5px
+        color: #333
+        padding: 5px 10px
+        margin: 0 10px
+
+
+/* footer
+
+footer
+    padding: 0
+    div.container
+        text-align: center
+
+
+
+
+
+@import "mobile"

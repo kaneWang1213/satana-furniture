@@ -1,0 +1,575 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-webkit-keyframes showout {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes showout {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 360deg);
+    opacity: 1;
+  }
+}
+@-o-keyframes showout {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 360deg);
+    opacity: 1;
+  }
+}
+@keyframes showout {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 360deg);
+    opacity: 1;
+  }
+}
+nav.navbar-default {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+nav .navbar-nav li a {
+  line-height: 230%;
+}
+nav .navbar-nav li.logout {
+  display: none;
+}
+nav .navbar-header #navbar {
+  vertical-align: middle;
+}
+nav .navbar-header .navbar-brand {
+  float: initial;
+  display: table;
+}
+
+body {
+  font-family: "Microsoft Jhenghei";
+}
+body > div.page {
+  padding-bottom: 50px;
+  margin-top: 68px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100px;
+  background-color: #fff;
+}
+body > div.page .inner .banner {
+  height: 180px;
+  overflow: hidden;
+}
+body > div.page .inner .banner img {
+  width: 100%;
+}
+body > div.page section {
+  margin: 30px auto;
+  clear: left;
+}
+body > div.page section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 200%;
+}
+body > div.page section h3 {
+  background: transparent url("../img/titleground.jpg") repeat left top;
+  background-size: 100% contain;
+  margin: 30px 0;
+  width: 100%;
+  padding: 10px 15px 10px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 32px;
+  text-shadow: 0 1px #fff;
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
+}
+body > div.page section h3 span {
+  font-size: 11px;
+  margin-left: 15px;
+}
+body > div.page section.interduce h1 {
+  font-size: 5vmin;
+  text-align: center;
+  padding: 10px 0;
+}
+body > div.page section.interduce .text {
+  font-size: 2vmin;
+  color: #555;
+  line-height: 180%;
+  text-align: center;
+}
+body > div.page section.interduce iframe {
+  width: 100%;
+  height: 60%;
+}
+body > div.page section.class .item {
+  margin-bottom: 30px;
+}
+body > div.page section.class .img {
+  background: #fff no-repeat center center/cover;
+}
+body > div.page section.class .content {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: calc(100% - 30px);
+  padding: 0 10px;
+  color: #fff;
+}
+body > div.page section.class .content h4 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 180%;
+  font-weight: bold;
+}
+body > div.page section.class .content div.brief {
+  font-size: 11px;
+}
+body > div.page section.new .lists .item, body > div.page section.sale .lists .item {
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+}
+body > div.page section.new .lists .item .img, body > div.page section.sale .lists .item .img {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  background: #fff no-repeat center center/150%;
+  transition: ease 0.25s background-size;
+}
+body > div.page section.new .lists .item .img:hover, body > div.page section.sale .lists .item .img:hover {
+  background-size: 100%;
+}
+body > div.page section.new .lists .item .content, body > div.page section.sale .lists .item .content {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: calc(100% - 30px);
+}
+body > div.page section.new .lists .item .content h4, body > div.page section.sale .lists .item .content h4 {
+  text-align: center;
+  color: #249924;
+  padding: 10px 0;
+  font-size: 21px;
+}
+body > div.page section.new .lists .item .content .price, body > div.page section.sale .lists .item .content .price {
+  color: #ff0000;
+  font-size: 21px;
+  font-weight: bold;
+}
+body > div.page section.new .lists .item .content .price:before, body > div.page section.sale .lists .item .content .price:before {
+  content: "price: ";
+  font-size: 10px;
+  color: #000;
+  max-height: 0;
+}
+body > div.page section.new .lists .item .content .brief, body > div.page section.sale .lists .item .content .brief {
+  color: #333;
+  font-size: 15px;
+  line-height: 150%;
+}
+body > div.page section.new .lists .item .content .price, body > div.page section.new .lists .item .content .brief, body > div.page section.sale .lists .item .content .price, body > div.page section.sale .lists .item .content .brief {
+  padding: 0 10px;
+  line-height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: ease 0.25s max-height, ease 0.25s line-height;
+}
+body > div.page section.new .lists .item:hover .content, body > div.page section.sale .lists .item:hover .content {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+body > div.page section.new .lists .item:hover .content .price, body > div.page section.new .lists .item:hover .content .brief, body > div.page section.sale .lists .item:hover .content .price, body > div.page section.sale .lists .item:hover .content .brief {
+  line-height: 150%;
+  max-height: 200px;
+}
+body > div.page section .buttons {
+  display: inline-table;
+}
+body > div.page section .buttons .btn {
+  padding: 5px 25px;
+  border-radius: 0px;
+  background-color: #d13269;
+  color: #fff;
+}
+body > div.page section .buttons .btn:hover {
+  background-color: #a51f4d;
+}
+body > div.page section .bannerFrame {
+  overflow: hidden;
+  width: 100%;
+  height: 560px;
+}
+body > div.page section .bannerFrame div.inner {
+  height: inherit;
+}
+body > div.page section .bannerFrame div.inner div.item {
+  padding: 0;
+  width: 100vw;
+  height: inherit;
+  position: relative;
+  background: #333 no-repeat center center/100% auto;
+}
+body > div.page section .bannerFrame div.inner div.item div.text {
+  width: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: center;
+}
+body div.product section div.img {
+  background: #fff no-repeat center center/contain;
+}
+body div.product div.swiper-container {
+  width: calc(100% - 30px);
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body div.product div.swiper-container.gallery-top {
+  height: 65%;
+}
+body div.product div.swiper-container.gallery-top div.swiper-slide {
+  background-position: center;
+  background-size: contain;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+body div.product div.swiper-container.gallery-thumbs {
+  height: 15%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+body div.product div.swiper-container.gallery-thumbs .swiper-slide {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 15%;
+  height: 100%;
+  opacity: 0.4;
+}
+body div.product div.swiper-container.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+body.authoried nav .navbar-nav li.login {
+  display: none;
+}
+body.authoried nav .navbar-nav li.logout {
+  display: block;
+}
+
+.blockUI .sign-frame .inner {
+  padding: 15px;
+}
+.blockUI .sign-frame .inner div.cross {
+  width: 30px;
+  height: 30px;
+  transform: translate(50%, -50%);
+  background: #000 url(../backoffice/img/cross.png) no-repeat center center;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blockUI .sign-frame .inner div {
+  margin-bottom: 15px;
+}
+.blockUI .sign-frame .inner div div.tip {
+  color: #ff0000;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.blockUI .sign-frame .inner div div.fb {
+  background-color: #0000ff;
+  color: #fff;
+}
+.blockUI .sign-frame .inner div div.loginBtn, .blockUI .sign-frame .inner div div.registorBtn, .blockUI .sign-frame .inner div div.registorConfirm, .blockUI .sign-frame .inner div div.updateConfirm, .blockUI .sign-frame .inner div div.orderBtn, .blockUI .sign-frame .inner div div.btn {
+  width: 100%;
+}
+.blockUI .sign-frame .inner div:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.blockUI .sign-frame .inner div.other {
+  border-top: 1px solid #ddd;
+}
+.blockUI .sign-frame .inner form {
+  display: none;
+}
+.blockUI .sign-frame .inner form input {
+  border: none;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.125);
+}
+.blockUI .sign-frame .inner form > div {
+  margin: 30px 0 10px;
+  position: relative;
+}
+.blockUI .sign-frame .inner form > div label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: ease 0.25s top, ease 0.25s font-size;
+  color: #999;
+}
+.blockUI .sign-frame .inner form > div.onFocus label {
+  top: -20px;
+  font-size: 10px;
+  color: #aaa;
+}
+.blockUI .sign-frame.login form#login {
+  display: block;
+}
+.blockUI .sign-frame.update form#update {
+  display: block;
+}
+.blockUI .sign-frame.order form#order {
+  display: block;
+}
+.blockUI .sign-frame.registor form#registor {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+.width2Side {
+  width: 100%;
+  height: auto;
+}
+
+div.blackFrame {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+div.blackFrame div.inner {
+  width: 240px;
+  height: 360px;
+  background-color: #fff;
+  box-shadow: 0 0 15px #000;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: showout;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: showout;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0;
+  -o-animation-duration: 5s;
+  -o-animation-name: showout;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-name: showout;
+  animation-fill-mode: forwards;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -180px 0 0 -120px;
+}
+
+.pathlink {
+  font-size: 12px;
+  line-height: 180%;
+  margin: 15px 0;
+}
+.pathlink a {
+  text-decoration: none;
+}
+
+div.product h2 {
+  font-size: 38px;
+  line-height: 180%;
+  background: transparent url(../img/sofa.svg) no-repeat 10px 64%/35px 35px;
+  padding-left: 60px;
+}
+div.product .description h4 {
+  line-height: 180%;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 15px 5px;
+}
+div.product .description .briefInner {
+  padding: 15px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+footer div > div {
+  display: inline-table;
+  vertical-align: top;
+  line-height: 200%;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  body .container {
+    width: 960px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .page {
+    width: 100% !important;
+  }
+  body .container {
+    width: 994px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav > li > a {
+    padding: 5px;
+  }
+
+  .page {
+    width: 100% !important;
+  }
+
+  .blockMsg {
+    width: 90% !important;
+    transform: translateY(-50%);
+    top: 55% !important;
+    left: 5% !important;
+  }
+  .blockMsg .sign-frame {
+    width: 100%;
+  }
+  .blockMsg .sign-frame .inner {
+    width: 100%;
+  }
+
+  .navbar-brand > img {
+    width: calc(100% - 10px);
+  }
+
+  body .container {
+    width: 100% !important;
+  }
+  body > div.page {
+    margin-top: 53px;
+    width: 100% !important;
+  }
+  body > div.page section h3 {
+    text-align: center;
+  }
+  body > div.page section .bannerFrame {
+    height: 75vh;
+  }
+  body > div.page section .bannerFrame div.inner div.item {
+    background-size: auto 100%;
+  }
+  body > div.page section.interduce h1 {
+    font-size: 8vmin;
+  }
+  body > div.page section.interduce .text {
+    font-size: 5vmin;
+  }
+  body > div.page section .item {
+    margin-bottom: 0 !important;
+    padding: 5px;
+  }
+  body > div.page section.class .content {
+    left: 5px;
+    width: calc(100% - 10px);
+    bottom: 5px;
+  }
+  body > div.page .inner .banner {
+    margin: 0 -15px;
+    height: auto;
+  }
+  body > div.page .inner h2 {
+    text-align: center;
+  }
+  body footer div > div img {
+    width: 100%;
+  }
+  body div.clearCol {
+    clear: left;
+  }
+  body div.product div.swiper-container.gallery-top div.swiper-slide {
+    background-size: cover;
+  }
+}

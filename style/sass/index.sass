@@ -1,0 +1,360 @@
+@import "compass/reset"
+@import "../../backoffice/style/sass/common"
+
+nav
+    &.navbar-default
+        background-image: none
+        background-color: rgba(255, 255, 255, .95)
+    .navbar-nav
+        li
+            a
+                line-height: 230%
+            &.logout
+                display: none
+    .navbar-header
+        #navbar
+            vertical-align: middle
+        .navbar-brand
+            float: initial
+            display: table
+body
+    font-family: "Microsoft Jhenghei"
+    > div.page
+        padding-bottom: 50px
+        margin-top: image-height("img/headerLogo.png") + 31
+        margin-left: auto
+        margin-right: auto
+        min-height: 100px
+        background-color: #fff
+        .inner
+            .banner
+                height: 180px
+                overflow: hidden
+                img
+                    width: 100%
+        section
+            margin: 30px auto
+            clear: left
+            h2
+                font-size: 32px
+                font-weight: bold
+                line-height: 200%
+            h3
+                background: transparent url("../img/titleground.jpg") repeat left top
+                background-size: 100% contain
+                margin: 30px 0
+                width: 100%
+                padding: 10px 15px 10px 30px
+                font-weight: bold
+                border-radius: 30px
+                font-size: 32px
+                text-shadow: 0 1px #fff
+                color: rgba(0, 0, 0, .8)
+                border-bottom: 1px solid rgba(255, 255, 255, .3)
+                box-shadow: 0 0 3px rgba(0,0,0,.26)
+                span
+                    font-size: 11px
+                    margin-left: 15px
+            &.interduce
+                h1
+                    font-size: 5vmin
+                    text-align: center
+                    padding: 10px 0
+                .text
+                    font-size: 2vmin
+                    color: #555
+                    line-height: 180%
+                    text-align: center
+                iframe
+                    width: 100%
+                    height: 60%
+            &.class
+                .item
+                    margin-bottom: 30px
+                .img
+                    background: #fff no-repeat center center / cover
+                .content
+                    position: absolute
+                    left: 15px
+                    bottom: 0
+                    background-color: rgba(0,0,0,.3)
+                    width: calc(100% - 30px)
+                    padding: 0 10px
+                    color: #fff
+                    h4
+                        font-size: 18px
+                        color: #fff
+                        line-height: 180%
+                        font-weight: bold
+                    div.brief
+                        font-size: 11px
+
+            &.new, &.sale
+                .lists
+                    .item
+                        margin-bottom: 30px
+                        position: relative
+                        cursor: pointer
+                        .img
+                            box-shadow: 0 5px 25px rgba(0, 0, 0, .15)
+                            background: #fff no-repeat center center / 150%
+                            transition: ease .25s background-size
+                            &:hover
+                                background-size: 100%
+                        .content
+                            position: absolute
+                            left: 15px
+                            bottom: 0
+                            width: calc(100% - 30px)
+                            h4
+                                text-align: center
+                                color: #249924
+                                padding: 10px 0
+                                font-size: 21px
+                            .price
+                                color: #ff0000
+                                font-size: 21px
+                                font-weight: bold
+                                &:before
+                                    content: "price: "
+                                    font-size: 10px
+                                    color: #000
+                                    max-height: 0
+                            .brief
+                                color: #333
+                                font-size: 15px
+                                line-height: 150%
+                            .price, .brief
+                                padding: 0 10px
+                                line-height: 100%
+                                max-height: 0
+                                overflow: hidden
+                                transition: ease .25s max-height, ease .25s line-height
+                        &:hover
+                            .content
+                                background-color: rgba(255, 255, 255, .8)
+                                .price, .brief
+                                    line-height: 150%
+                                    max-height: 200px
+            .buttons
+                display: inline-table
+                .btn
+                    padding: 5px 25px
+                    border-radius: 0px
+                    background-color: #d13269
+                    color: #fff
+                    &:hover
+                        background-color: #a51f4d
+            .bannerFrame
+                overflow: hidden
+                width: 100%
+                height: 560px
+                div.inner
+                    height: inherit
+                    div.item
+                        padding: 0
+                        width: 100vw
+                        height: inherit
+                        position: relative
+                        background: #333 no-repeat center center/ 100% auto
+                        div.text
+                            width: inherit
+                            background-color: rgba(0, 0, 0, .4)
+                            color: #fff
+                            position: absolute
+                            left: 0
+                            bottom: 0
+                            padding: 15px
+                            text-align: center
+        
+    div.product
+        section
+            div.img
+                background: #fff no-repeat center center/ contain
+        div.swiper-container
+            width: calc(100% - 30px)
+            height: 300px
+            margin-left: auto
+            margin-right: auto
+            &.gallery-top
+                height: 65%
+                div.swiper-slide
+                    background-position: center
+                    background-size: contain
+                    background-color: #fff
+                    background-repeat: no-repeat
+                    
+            &.gallery-thumbs
+                height: 15%
+                box-sizing: border-box
+                padding: 10px 0
+                .swiper-slide 
+                    background-color: #fff
+                    background-repeat: no-repeat
+                    background-size: auto 100%
+                    width: 15%
+                    height: 100%
+                    opacity: 0.4
+                .swiper-slide-active
+                    opacity: 1
+    &.authoried
+        nav
+            .navbar-nav
+                li.login
+                    display: none
+                li.logout
+                    display: block
+.blockUI 
+    .sign-frame
+        .inner
+            position:relative
+            padding: 15px
+            div.cross
+                width: 30px
+                height: 30px
+                transform: translate(50%, -50%)
+                background: #000 url(../backoffice/img/cross.png) no-repeat center center
+                border: 2px solid #fff
+                box-shadow: 0 0 10px #000
+                cursor: pointer
+                position: absolute
+                right: 0
+                top: 0
+                border-radius: 30px
+            div
+                margin-bottom: 15px
+                div.tip
+                    color: #ff0000
+                    font-size: 12px
+                    margin: 10px 0
+                div.fb
+                    background-color: #0000ff
+                    color: #fff
+                div.loginBtn, div.registorBtn, div.registorConfirm, div.updateConfirm, div.orderBtn, div.btn
+                    width: 100%
+                &:nth-last-child(1)
+                    margin-bottom: 0
+            div.other
+                border-top: 1px solid #ddd
+            form
+                display: none
+                input
+                    border: none
+                    border-bottom: 1px solid #eee
+                    width: 100%
+                    background-color: rgba(255, 255, 255, .125)
+                > div
+                    margin: 30px 0 10px
+                    position: relative
+                    label
+                        position: absolute
+                        left: 0
+                        top: 0
+                        z-index: -1
+                        transition: ease .25s top, ease .25s font-size
+                        color: #999
+                    &.onFocus
+                        label
+                            top: -20px
+                            font-size: 10px
+                            color: #aaa
+
+                    
+        &.login
+            form#login
+                display: block
+        &.update
+            form#update
+                display: block
+        &.order
+            .inner
+            form#order
+                display: block
+        &.registor
+            .inner
+            form#registor
+                display: block
+            
+
+.clear
+    clear: both        
+.width2Side
+    width: 100%
+    height: auto
+div.blackFrame
+    width: 100%
+    height: 100vh
+    background-color: rgba( 0, 0, 0, .5)
+    position: absolute
+    left: 0
+    top: 0
+    div.inner
+        width: 240px
+        height: 360px
+        background-color: #fff
+        box-shadow: 0 0 15px #000
+        +animation(0, 5s, showout)
+        position: absolute
+        left: 50%
+        top: 50%
+        margin: -180px 0 0 -120px
+.pathlink
+    font-size: 12px
+    line-height: 180%
+    margin: 15px 0
+    a
+        text-decoration: none
+div.product
+    h2
+        font-size: 38px
+        line-height: 180%
+        background: transparent url(../img/sofa.svg) no-repeat 10px 64% / 35px 35px
+        padding-left: 60px
+    .description
+        h4
+            line-height: 180%
+            font-size: 18px
+            border-bottom: 1px solid #ccc
+            padding: 15px 15px 5px
+        .briefInner
+            padding: 15px
+
+footer
+    width: 100%
+    text-align: center
+    padding: 10px
+    div > div
+        display: inline-table
+        vertical-align: top
+        line-height: 200%
+        padding: 0 10px
+
+@media screen and (max-width: 1200px)
+    body 
+        .container
+            width: 960px !important
+
+@media screen and (max-width: 1024px)
+    body 
+        .page
+            width: 100% !important
+        .container
+            width: 994px !important
+
+@media screen and (max-width: 768px)
+    .nav 
+        > li 
+            > a
+                padding: 5px
+    .page
+        width: 100% !important
+    .blockMsg
+        width: 90% !important
+        transform: translateY(-50%)
+        top: 55% !important
+        left: 5% !important
+        .sign-frame
+            width: 100%
+            .inner
+                width: 100%
+    @import "mobile"
